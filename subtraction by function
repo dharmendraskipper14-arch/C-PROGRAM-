@@ -1,0 +1,20 @@
+#include <stdio.h>
+int subtract(int num1, int num2) {
+    int difference = num1 - num2; // Perform the subtraction
+    return difference;            // Return the calculated difference
+}
+
+int main() {
+    int number1 = 20;
+    int number2 = 7;
+    int result;
+
+    
+    result = subtract(number1, number2);
+
+    printf("The difference between %d and %d is: %d\n", number1, number2, result);
+
+    printf("100 - 45 = %d\n", subtract(100, 45));
+
+    return 0;
+}
