@@ -1,0 +1,38 @@
+#include<stdio.h>
+int main() {
+    int n;
+    printf("enter the no of all elements");
+    scanf("%d", &n);
+    
+     int i,j,k,a[n],count=0,sum=12;
+        for(i=0; i<n; i++)
+            {
+                scanf("%d", &a[i]);
+            }
+            
+            
+        for(i=0; i<n; i++)
+            {
+                for(j=i+1; j<n; j++)
+                {
+                  for(k=j+1; k<n; k++)
+                
+                {
+                    if(sum==a[i]+a[j]+a[k])
+                    {
+                        count++;
+                        printf("triplets are (%d,%d,%d)\n", a[i], a[j],a[k]);
+                    }
+                
+                    
+                    
+                
+                }
+            }
+                
+            }
+        printf("count is %d", count);
+        return 0;
+
+}
+                
