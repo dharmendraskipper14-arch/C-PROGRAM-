@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main() {
+    int i, decimal, binary=0,r=1;
+     printf("enter an nunber:");
+     scanf("%d", & decimal);
+     i=1;
+     while(decimal!=0)
+     {
+         r=decimal%2;
+         binary+=r*i;
+         decimal/=2;
+         i*=10;
+     }
+     printf("binary of an decimal is= %d", binary);
+     return 0;
+}
