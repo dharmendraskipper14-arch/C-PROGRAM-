@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<math.h>
+void compoundinterest(int principal, float rate, int time);
+int main()
+{
+    int principal, time;
+    float rate;
+    compoundinterest(principal, rate, time);
+    return 0;
+}
+void compoundinterest(int principal, float rate, int time)
+{   
+    scanf("%d %f %d", &principal, &rate, &time); 
+    float amount = principal * (pow((1 + rate / 100), time));
+    float ci = amount - principal;
+    printf("Compound Interest for principal %d, rate %.2f%%, time %d years is: %.2f\n", principal, rate, time, ci);
+}
