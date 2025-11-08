@@ -1,0 +1,15 @@
+#include<stdio.h>
+int remainder(int firstnum, int secondnum);
+int main()
+{
+    int firstnum, secondnum;
+    remainder(firstnum, secondnum);
+    return 0;
+}
+int remainder(int firstnum, int secondnum)
+{
+    scanf("%d %d", &firstnum, &secondnum);
+    int remainder= firstnum % secondnum;
+    printf("Remainder of %d and %d is: %d\n", firstnum, secondnum, remainder);
+    return firstnum % secondnum;
+}
