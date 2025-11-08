@@ -1,0 +1,14 @@
+#include<stdio.h>
+int qoutient(int firstnum, int secondnum);
+int main()
+{
+    int firstnum, secondnum;
+    qoutient(firstnum, secondnum);
+    return 0;
+}
+int qoutient(int firstnum, int secondnum)
+{   
+    scanf("%d %d", &firstnum, &secondnum); 
+    printf("Qoutient of %d and %d is: %d\n", firstnum, secondnum, firstnum / secondnum);
+    return firstnum / secondnum;
+}
