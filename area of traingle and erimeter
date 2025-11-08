@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<math.h>
+void areaoftriangle(float a, int b, int c); 
+void perimeteroftriangle(int a, int b, int c);
+
+int main() {
+    int a, b, c; 
+    
+    areaoftriangle(a, b, c); 
+    
+
+    perimeteroftriangle(a, b, c); 
+
+    return 0;
+}
+
+void areaoftriangle(float a, int b, int c) { 
+
+printf("Enter the three sides of the triangle for area calculation: ");
+    scanf("%d %d %d", &a, &b, &c);
+    
+    float s = (a + b + c) / 2.0;
+    float area = sqrt(s * (s - a) * (s - b) * (s - c)); 
+    printf("Area is %.2f\n", area); 
+}
+
+void perimeteroftriangle(int a, int b, int c) {
+
+printf("Enter the three sides of the triangle for perimeter calculation: ");
+    scanf("%d %d %d", &a, &b, &c)
+    printf("Perimeter is = %d\n", a + b + c);
+}
