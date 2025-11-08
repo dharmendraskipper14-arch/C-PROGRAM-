@@ -1,0 +1,14 @@
+#include<stdio.h>
+int subtraction(int firstnum, int secondnum);
+int main()
+{
+    int firstnum, secondnum;
+    subtraction(firstnum, secondnum);
+    return 0;
+}
+int subtraction(int firstnum, int secondnum)
+{   
+    scanf("%d %d", &firstnum, &secondnum); 
+    printf("Subtraction of %d and %d is: %d\n", firstnum, secondnum, firstnum - secondnum);
+    return firstnum - secondnum;
+}
