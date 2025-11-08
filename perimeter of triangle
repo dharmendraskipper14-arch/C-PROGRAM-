@@ -1,0 +1,13 @@
+#include<stdio.h>
+void perimeterOfRectangle(int length, int breadth, int *perimeter);
+int main() {
+    int length, breadth, perimeter;
+    printf("Enter length and breadth of the rectangle: ");
+    scanf("%d %d", &length, &breadth);
+    perimeterOfRectangle(length, breadth, &perimeter);
+    printf("Perimeter of the rectangle: %d\n", perimeter);
+    return 0;
+}
+void perimeterOfRectangle(int length, int breadth, int *perimeter) {
+    *perimeter = 2 * (length + breadth);
+}
