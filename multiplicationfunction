@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+
+int multiply(int firstnum, int secondnum);
+
+int main() { 
+    multiply(12, 4);
+    multiply(5, 3);
+    multiply(7, 6);
+    multiply(9, 8);
+    
+
+    return 0;
+}
+
+
+int multiply(int num1, int num2) { 
+    
+    printf("Multiplication of %d and %d is: %d\n", num1, num2, num1 * num2);
+    return num1 * num2;
+}
