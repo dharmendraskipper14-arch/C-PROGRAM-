@@ -1,0 +1,47 @@
+#include<stdio.h>
+int main() {
+    int choice;
+    long int  binary,decimal;
+    int rem,r,base,i;
+    printf("binary to decimal and vice versa");
+    printf("enter your choice(1 or 2)");
+    scanf("%d", &choice);
+    switch (choice) {
+        case 1:
+        
+        printf("enter any number in binary form:");
+    scanf("%d", &binary);
+    decimal=0; base=1;
+    while(binary!=0){
+        rem=binary%10;
+        decimal +=rem*base;
+        binary /=10;
+        base *=2;
+    }
+    printf("the decimal of binary is : %d", decimal);
+    break;
+
+    case 2:
+       
+     printf("enter an number:");
+     scanf("%d", & decimal);
+     i=1; binary=0;
+     while(decimal!=0)
+     {
+         r=decimal%2;
+         binary+=r*i;
+         decimal/=2;
+         i*=10;
+     }
+     printf("binary of an decimal is= %d", binary);
+    break;
+     
+    default :
+    printf("invalid choice\n");
+    break;
+
+
+    }
+    return 0;
+
+}
