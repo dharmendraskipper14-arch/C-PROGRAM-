@@ -1,0 +1,25 @@
+#include<stdio.h>
+int fibnocci();
+int main() {
+    printf("fibnocci series");
+    fibnocci();
+    return 0;
+}
+int fibnocci(){
+    int i,n,a=0,b=1,c;
+    printf("enter the number upto:");
+    scanf("%d", &n);
+    if(a==0 || b==1){
+        printf("%d %d",a,b);
+    }
+    for(i=0;i<n-2;i++){
+        c=a+b;
+    
+        printf("%d",c);
+       a=b;
+       b=c;
+
+    }
+
+return 0;
+}
