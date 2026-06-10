@@ -1,16 +1,19 @@
 #include <stdio.h>
+
 int main() {
-int sum= 0;
-printf( "The star pyramid is:\n");
-for (int i = 1; i <= 5; i++) {
-for (int k = 4; k >= i; k -- ) {
-printf(" ");
+    int sum = 0;
 
-sum = sum * 10 +1;
-printf( "%d", sum * sum);
-printf( "\n");
-}
+    printf("The pattern is:\n");
 
-}
-return 0;
+    for (int i = 1; i <= 5; i++) {
+        sum = sum * 10 + 1;
+
+        for (int k = 1; k <= 5 - i; k++) {
+            printf(" ");
+        }
+
+        printf("%d\n", sum * sum);
+    }
+
+    return 0;
 }
